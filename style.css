@@ -138,6 +138,26 @@ nav .logo a {
   width: 100%;
   border-radius: 5%;
 }
+
+.container_arrayanes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container_arrayanes h2 {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: orange;
+}
+
+.arrayanes {
+  width: 100%;
+  border-radius: 5%;
+}
+
 nav .links {
   display: flex;
   gap: 2rem;
