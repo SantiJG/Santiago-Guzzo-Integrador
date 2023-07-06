@@ -126,6 +126,49 @@
         </p>
       </article>
     </section>
+    <section class="container container_register">
+      <article class="register">
+        <h2>Ingresa tus datos aca</h2>
+        <form class="container_form">
+          <label class="label_form" for="name"> Nombre</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Nombre Completo"
+            required
+          />
+          <label class="label_form" for="email">Correo Electronico</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="hotmail/gmail..."
+            required
+          />
+          <label class="label_form" for="dateofbirth"
+            >Fecha de Nacimiento</label
+          >
+          <input
+            type="date"
+            name="fecha de nacimiento"
+            id="dateofbirth"
+            required
+          />
+          <label class="label_form" for="password">Contraseña</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Min 6 caracteres"
+            required
+            minlength="6"
+          />
+          <input class="input_form" type="submit" value="Enviar" />
+          <input class="input_form" type="reset" value="Borrar Todo" />
+        </form>
+      </article>
+    </section>
     <script>
       const toggleBtn = document.querySelector(".toggle_btn");
       const dropdown_menu = document.querySelector(".dropdown_menu");

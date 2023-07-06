@@ -158,6 +158,51 @@ nav .logo a {
   border-radius: 5%;
 }
 
+.container_register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container_register h2 {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: orange;
+}
+
+.container_form {
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 7;
+}
+
+.label_form {
+  margin: 10px;
+}
+
+.input_form {
+  margin: 10px;
+  background-color: orange;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: scale 0.2 ease;
+}
+
+.input_form:hover {
+  scale: 1.05;
+  color: #fff;
+}
+
 nav .links {
   display: flex;
   gap: 2rem;
