@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Turistea</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo"><a href="#">Turistea</a></div>
+        <ul class="links">
+          <li><a href="#beginnig">Inicio</a></li>
+          <li><a href="#we">Nosotros</a></li>
+          <li><a href="#route">Recorridos</a></li>
+        </ul>
+        <a href="#" class="action_btn">Registrate</a>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </div>
+      </nav>
+      <div class="dropdown_menu">
+        <li><a href="#beginnig">Inicio</a></li>
+        <li><a href="#we">Nosotros</a></li>
+        <li><a href="#route">Recorridos</a></li>
+        <li><a href="#" class="action_btn">Registrate</a></li>
+      </div>
+    </header>
+    <section class="container container_welcome">
+      <article id="beginnig">
+        <h1>Estamos felices por tu visita</h1>
+        <h2>
+          Ansiamos que visites todos estos recorridos que pensamos para vos
+        </h2>
+        <p>
+          Te recomendamos para tu seguridad estar siempre acompañado de un guía
+          o guardaparque.
+        </p>
+        <h2>¡Comencemos!</h2>
+      </article>
+    </section>
+    <section class="container container_places">
+      <article id="route">
+        <h2>Cascada de los Duendes</h2>
+        <div class="container container_cascada">
+          <img
+            class="cascada"
+            src="././Img/Cascada de los Duendes.jpg"
+            alt="Cascada de los Duendes"
+          />
+        </div>
+        <h2>Descripción</h2>
+        <p>
+          Esta es una caminata de una dificultad baja la cual se encuentra en
+          Villa Los Coihues. La misma tiene un recorrido de 600m (1:30hs ida y
+          vuelta)
+        </p>
+        <p>
+          Es un sendero ideal para hacerlo con niños pequeños ya que es fácil y
+          de corta duración.
+        </p>
+        <p>
+          La entrada al sendero está bien indicada con un cartel ubicado frente
+          a la Seccional de Guardaparques de Lago Gutiérrez. El camino es ancho
+          e inicia con muy poca pendiente bordeando el Arroyo Pescadero. Se
+          trata de un sendero autoguiado con información sobre el bosque andino
+          patagónico y sus procesos naturales.
+        </p>
+        <p>
+          Hay que prestar mucha atención a la señalización y no salir de la
+          senda. También hay que ver bien por donde se transita ya que hay
+          raíces, piedras o ramas que pueden provocar tropiezos, además de que a
+          pocos metros de iniciado el recorrido la senda es atravesada por una
+          Bicisenda .
+        </p>
+        <p>
+          Llegando a un desvío, éste indica continuar hacia la derecha (el de la
+          izquierda lleva al Mirador, a Playa Muñoz y al Refugio Emilio Frey). A
+          pocos metros se cruza un puente y se llega a la cascada. Se regresa
+          por el mismo camino, prestando atención en los cruces de senderos para
+          no perderse.
+        </p>
+      </article>
+    </section>
+    <section class="container container_turistea">
+      <article id="we">
+        <h2>¿Quienes Somos?</h2>
+        <p>
+          Somos Turistea, una agencia de tusrismo en San Carlos de Bariloche.
+          Con nosotros vas a poder encontrar las mejores atracciones.Desde
+          excursiones, restaurantes, chocolaterías y mucho más. Ya que contamos
+          con los mejores profesionales del rubro
+        </p>
+      </article>
+    </section>
+    <script>
+      const toggleBtn = document.querySelector(".toggle_btn");
+      const dropdown_menu = document.querySelector(".dropdown_menu");
+      toggleBtn.onclick = function () {
+        dropdown_menu.classList.toggle("open");
+      };
+    </script>
+  </body>
+</html>

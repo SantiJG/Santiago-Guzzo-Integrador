@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+  background-image: url(https://www.tiempoar.com.ar/wp-content/uploads/2023/05/emprotur-bariloche-3-scaled.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+a:hover {
+  color: orange;
+}
+/* HEADER */
+header {
+  position: relative;
+  padding: 0 2rem;
+}
+
+nav {
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.789);
+  color: white;
+  margin: 5rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 992px) {
+  .container {
+    margin: 0;
+  }
+}
+
+.container_welcome h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  color: orange;
+  font-size: 35px;
+}
+
+.container_welcome h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.container_welcome p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_turistea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_turistea h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  color: orange;
+}
+
+.container_turistea p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.container_places {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_places h2 {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: orange;
+}
+
+nav .logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: orange;
+  background-color: black;
+  border-radius: 50%;
+  margin: 8px;
+  padding: 8px;
+}
+
+.container_cascada {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cascada {
+  width: 100%;
+  border-radius: 5%;
+}
+nav .links {
+  display: flex;
+  gap: 2rem;
+}
+
+nav .toggle_btn {
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 992px) {
+  nav .toggle_btn {
+    display: block;
+  }
+}
+
+.action_btn {
+  background-color: orange;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: scale 0.2 ease;
+}
+
+.action_btn:hover {
+  scale: 1.05;
+  color: #fff;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+  nav .links,
+  nav .action_btn {
+    display: none;
+  }
+
+  nav .toggle_btn {
+    display: block;
+  }
+}
+
+/* DROPDOWN MENU */
+.dropdown_menu {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: heigth 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+  display: block;
+}
+.dropdown_menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dropdown_menu .action_btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.dropdown_menu {
+  display: none;
+}
