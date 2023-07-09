@@ -16,22 +16,22 @@
   <body>
     <header>
       <nav>
-        <div class="logo"><a href="#">Turistea</a></div>
+        <div class="logo"><a href="#" aria-label="Logo Turistea">Turistea</a></div>
         <ul class="links">
-          <li><a href="#beginnig">Inicio</a></li>
-          <li><a href="#we">Nosotros</a></li>
-          <li><a href="#route">Recorridos</a></li>
+          <li><a href="#beginnig" aria-label="Enlace a Inicio">Inicio</a></li>
+          <li><a href="#we" aria-label="Enlace a Nosotros">Nosotros</a></li>
+          <li><a href="#route" aria-label="Enlace a Recorridos">Recorridos</a></li>
         </ul>
-        <a href="#register_form" class="action_btn">Registrate</a>
+        <a href="#register_form" aria-label="Enlace a Registrarse" class="action_btn">Registrate</a>
         <div class="toggle_btn">
-          <i class="fa-solid fa-bars-staggered"></i>
+          <i class="fa-solid fa-bars-staggered" aria-label="Menú desplegable"></i>
         </div>
       </nav>
       <div class="dropdown_menu">
-        <li><a href="#beginnig">Inicio</a></li>
-        <li><a href="#we">Nosotros</a></li>
-        <li><a href="#route">Recorridos</a></li>
-        <li><a href="#register_form" class="action_btn">Registrate</a></li>
+        <li><a href="#beginnig" aria-label="Enlace a Inicio">Inicio</a></li>
+        <li><a href="#we" aria-label="Enlace a Nosotros">Nosotros</a></li>
+        <li><a href="#route" aria-label="Enlace a Recorridos">Recorridos</a></li>
+        <li><a href="#register_form" class="action_btn" aria-label="Enlace a Registrarse">Registrate</a></li>
       </div>
     </header>
     <section class="container container_welcome">
@@ -137,6 +137,7 @@
             id="name"
             placeholder="Nombre Completo"
             required
+            aria-label="Nombre"
           />
           <label class="label_form" for="email">Correo Electronico</label>
           <input
@@ -145,15 +146,17 @@
             id="email"
             placeholder="hotmail/gmail..."
             required
+            aria-label="Correo Electrónico"
           />
-          <label class="label_form" for="dateofbirth"
+          <label class="label_form" for="date"
             >Fecha de Nacimiento</label
           >
           <input
             type="date"
-            name="fecha de nacimiento"
-            id="dateofbirth"
+            name="date"
+            id="date"
             required
+            aria-label="Fecha de Nacimiento"
           />
           <label class="label_form" for="password">Contraseña</label>
           <input
@@ -163,9 +166,10 @@
             placeholder="Min 6 caracteres"
             required
             minlength="6"
+            aria-label="Contraseña"
           />
-          <input class="input_form" type="submit" value="Enviar" />
-          <input class="input_form" type="reset" value="Borrar Todo" />
+          <input class="input_form" type="submit" value="Enviar" aria-label="Enviar" />
+          <input class="input_form" type="reset" value="Borrar Todo" aria-label="Borrar Todo" />
         </form>
       </article>
     </section>
